@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>buat ayeshaa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Caveat:wght@600&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/assets/index-CP7SS_lE.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DQsDfdqi.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Envelope Layer -->
+    <div id="envelope-container" class="screen active">
+      <div class="envelope" id="envelope">
+        <svg viewBox="0 0 200 150" class="envelope-svg">
+          <rect x="0" y="0" width="200" height="150" fill="#e5abba" rx="10" />
+          <path d="M 0 0 L 100 80 L 200 0" fill="#f1c0c9" />
+          <circle cx="100" cy="80" r="15" fill="#d87a93" />
+          <path d="M 95 75 L 100 85 L 105 75 Z" fill="#fff" />
+        </svg>
+        <p class="envelope-text">buka ini sayang!</p>
+      </div>
+    </div>
+
+    <!-- Letter Layout -->
+    <div id="letter-container" class="screen hidden">
+      <img src="/assets/lotso.png" alt="Lotso" id="lotso" class="character lotso-pos hidden" />
+      <img src="/assets/samoyed.png" alt="Samoyed" id="samoyed" class="character samoyed-pos hidden" />
+
+      <div class="paper" id="paper-main">
+        <div class="text-content" id="letter-content">
+          Zzzz...
+        </div>
+        <div class="btn-container">
+          <button id="next-btn" class="next-btn">pencet!!</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cassette (Appears at bottom after last letter) -->
+    <div id="cassette-container" class="hidden">
+      <div id="cassette" class="cassette wiggle">
+        <svg viewBox="0 0 200 120" class="cassette-svg">
+          <rect width="200" height="120" rx="15" fill="#f2ccd5" />
+          <rect x="25" y="25" width="150" height="50" rx="10" fill="#fff" />
+          <circle cx="65" cy="50" r="15" fill="#555" />
+          <circle cx="135" cy="50" r="15" fill="#555" />
+          <path d="M 50 100 L 150 100" stroke="#777" stroke-width="6" stroke-linecap="round" />
+        </svg>
+        <p class="cassette-text">buka aku!!</p>
+      </div>
+    </div>
+
+    <!-- Slideshow Fullscreen (Appears during Audio) -->
+    <div id="slideshow-container" class="screen hidden">
+      <img id="slideshow-image" src="" alt="Kenangan" />
+    </div>
+
+  </div>
+
+  <audio id="bg-audio" src="/assets/ending.m4a"></audio>
+</body>
+</html>
